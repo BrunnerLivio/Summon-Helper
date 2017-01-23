@@ -1,0 +1,28 @@
+{
+  "name": "summon-helper",
+  "version": "1.1.0-beta",
+  "description": "Since 13w36a it is possible to summon entities using the /summon Command. Unfortunately Mojang does not offer a big support for this.This website is here for helping you with your summon commands without writing long lines of codes",
+  "main": "js/main.js",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrunnerLivio/summon-helper.git"
+  },
+  "keywords": [
+    "summon",
+    "minecraft",
+    "helper"
+  ],
+  "author": "Livio Brunner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BrunnerLivio/summon-helper/issues"
+  },
+  "homepage": "https://github.com/BrunnerLivio/summon-helper#readme",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}

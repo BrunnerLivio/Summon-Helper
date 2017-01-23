@@ -1,0 +1,70 @@
+
+.itemEditor{
+	height:100%;
+	float:left;
+	display:none;
+	overflow:hidden;
+}
+
+.itemInformation .leftBorder{
+	background-color:#3E76AE;
+}
+.itemTagOverview .leftBorder{
+	background-color:#C22C22;
+}
+.itemTagOverview{
+	width:50px;
+	overflow:hidden;
+}
+.itemTagEditor{
+	width:50px;
+	overflow:hidden;
+}
+.itemTagEditor .leftBorder{
+	background-color:#9EBF6D;
+}
+ul{
+	list-style: none;
+}
+.itemTags{
+	width:95%;
+	height:90%;
+}
+.itemInformation .content h1,.itemInformation .content  h2, .itemInformation .content  h3{
+	color:#3E76AE;
+}
+.itemTagOverview .content h1,.itemTagOverview .content  h2, .itemTagOverview .content  h3{
+	color:#C22C22;
+}
+.itemTagEditor .content h1,.itemTagEditor .content  h2, .itemTagEditor .content  h3{
+	color:#9EBF6D;
+}
+#itemImage{
+	float:left;
+	display:inline;
+	width:32px;
+	height:32px;
+	border-radius:10px;
+	box-shadow:inset 1px 1px 20px rgba(0,0,0,0.5);
+	margin-top:20px;
+	margin-right:0px;
+}
+.itemInformation .topBar .button{
+	margin-top:30px;
+}
+.usernameImage{
+	height:64px;
+	width:64px;
+	float:left;
+}
+.usernamePreview{
+	height:auto;
+	width:auto;
+	display:block;
+	margin-left:5px;
+
+}
+.usernameEdit{
+	float:left;
+	margin-right:20px;
+}

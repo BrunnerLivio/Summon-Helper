@@ -1,0 +1,17 @@
+* text=auto
+
+*.js text
+*.md text
+*.json text
+*.yml text
+*.html text
+*.css text
+
+.npmignore text
+
+*.png binary
+*.jpg binary
+*.eot binary
+*.otf binary
+*.ttf binary
+*.woff binary

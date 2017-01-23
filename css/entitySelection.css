@@ -1,0 +1,33 @@
+.entityOverviewLeft{
+	float:left;
+	width:auto;
+	margin-left:20px;
+	width:10%;
+}
+.entityOverviewRight{
+	float:left;
+	width:60%;
+	margin-left:40px;
+}
+.entityInfo{
+	clear:both;
+	font-size:12px;
+	margin-top:5px;
+}
+.entityHearts{
+	margin-top:5px;
+}
+.columnList .item{
+	min-height:200px;
+}
+.columnList a{
+	color:white;
+	transition:opacity 0.5s linear;
+	-webkit-transition:opacity 0.5s linear;
+	-moz-transition:opacity 0.5s linear;
+	-o-transition:opacity 0.5s linear;
+	-ms-transition:opacity 0.5s linear;
+}
+.title{
+	color:white;
+}
