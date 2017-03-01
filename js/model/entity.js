@@ -272,7 +272,7 @@ var entity = {
 		//Generates the final command
 		generate : function(){
 			for(var j = 0;j<entity.all.length;j++){
-				delete entity.all[j].data["Riding"];
+				delete entity.all[j].data["Passengers"];
 				delete entity.all[j].data["Id"];
 				delete entity.all[j].data["EntityId"];
 				delete entity.all[j].data["SpawnData"];
@@ -304,10 +304,10 @@ var entity = {
 			finalData = entity.all[0].data;
 			data = finalData;
 			for(i=1;i<entity.all.length;i++){
-				finalData["Riding"] = {};
+				finalData["Passengers"] = [{}];
 				ridingObject = entity.all[i].data;
 				ridingObject["id"] = entity.all[i].entityData.name;
-				finalData["Riding"] = ridingObject;
+				finalData["Passengers"] = [ridingObject];
 				finalData = finalData.Riding;
 			}
 			
@@ -326,7 +326,7 @@ var entity = {
 		//Generates /setblock command for Spawners
 		generateSpawner : function(){
 			for(i=0;i<entity.all.length;i++){
-				delete entity.all[i].data["Riding"];
+				delete entity.all[i].data["Passengers"];
 				delete entity.all[i].data["Id"];
 				delete entity.all[i].data["EntityId"];
 				delete entity.all[i].data["SpawnData"];
@@ -342,10 +342,10 @@ var entity = {
 			}
 			//Adds all Riding object
 			for(i=1;i<entity.all.length;i++){
-				ridingData["Riding"] = {};
+				ridingData["Passengers"] = [{}];
 				ridingObject = entity.all[i].data;
 				ridingObject["id"] = entity.all[i].entityData.name;
-				ridingData["Riding"] = ridingObject;
+				ridingData["Passengers"] = [ridingObject];
 				ridingData = ridingData.Riding;
 			}
 			//The replace is for-> for Example : {CustomName : "Test"} instead of {"CustomName" : "Test"}
