@@ -277,7 +277,6 @@ var entity = {
 				delete entity.all[j].data["EntityId"];
 				delete entity.all[j].data["SpawnData"];
 				
-				
 
 				//Check if has equipment
 				//Is for cleaner code generation
@@ -301,13 +300,13 @@ var entity = {
 
 				
 			}
-			command = "/summon {0} {1} {2} {3}".format(entity.all[0].name, entity.x, entity.y, entity.z); 
+			command = "/summon {0} {1} {2} {3}".format(entity.all[0].entityData.name, entity.x, entity.y, entity.z); 
 			finalData = entity.all[0].data;
 			data = finalData;
 			for(i=1;i<entity.all.length;i++){
 				finalData["Riding"] = {};
 				ridingObject = entity.all[i].data;
-				ridingObject["id"] = entity.all[i].name;
+				ridingObject["id"] = entity.all[i].entityData.name;
 				finalData["Riding"] = ridingObject;
 				finalData = finalData.Riding;
 			}
@@ -334,7 +333,7 @@ var entity = {
 			}
 			command = "/setblock {0} {1} {2} minecraft:mob_spawner 0 replace ".format( entity.x, entity.y, entity.z); 
 			data = entity.all[0].data;
-			data["EntityId"] = entity.all[0].name;
+			data["EntityId"] = entity.all[0].entityData.name;
 			data["SpawnData"] = {};
 			ridingData = data["SpawnData"];
 			//Transfering the Attributes and data from entity.spawnerSettings to data
@@ -345,7 +344,7 @@ var entity = {
 			for(i=1;i<entity.all.length;i++){
 				ridingData["Riding"] = {};
 				ridingObject = entity.all[i].data;
-				ridingObject["id"] = entity.all[i].name;
+				ridingObject["id"] = entity.all[i].entityData.name;
 				ridingData["Riding"] = ridingObject;
 				ridingData = ridingData.Riding;
 			}
