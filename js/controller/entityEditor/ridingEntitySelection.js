@@ -11,7 +11,7 @@ var ridingEntitySelection = {
 				html += " style=\"width:110px\" ";
 			}
 			html += ">";
-			html += "<img infoBox=\"{2}\" OnClick=\"entityEditor.load({0})\" style=\"float:left\" src=\"./images/entity/{1}\" />".format(i, entity.all[i].entityData.image, entity.all[i].name);
+			html += "<img infoBox=\"{2}\" OnClick=\"entityEditor.load({0})\" style=\"float:left\" src=\"./images/entity/{1}\" />".format(i, entity.all[i].entityData.image, entity.all[i].entityData.display.name);
 			if(i >= 1)
 				html += "<div class=\"ico\" infoBox=\"Ascend Entity\" icon=\"arrow_up\" OnClick=\"entity.change({0}, {1});ridingEntitySelection.update();entityEditor.load({1})\"></div>".format(i, i-1);
 			if(i < entity.all.length-1)

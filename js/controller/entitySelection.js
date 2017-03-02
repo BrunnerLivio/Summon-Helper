@@ -24,7 +24,7 @@ var main = {
 				html += "<a href=\"entityEditor.html?entityId={0}\" id=\"a{1}{2}\" class=\"item\"><div id=\"{1}{2}\" >".format(queryResult[j].name,j,queryResult[j].name);
 				html += "<div class=\"entityOverviewLeft\"><img src=\"./images/entity/{0}\" alt=\"{1}\" /></div>".format(queryResult[j].image, queryResult[j].name);
 				html += "<div class=\"entityOverviewRight\">";
-				html += "<h3>{0}</h3>".format(queryResult[j].name);
+				html += "<h3>{0}</h3>".format(queryResult[j].display.name);
 				html += "<div class=\"entityHearts\">";
 
 				//Shows number of hearts for entity

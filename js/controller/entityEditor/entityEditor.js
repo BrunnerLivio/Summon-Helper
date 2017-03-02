@@ -41,7 +41,7 @@ var entityEditor = {
 				})
 				.ToArray();
 			for (var j = 0; j < queryResult.length; j++) {
-				html += "<li OnClick=\"entity.add('{1}');entityEditor.extraEditor.close();entityEditor.load(-1)\"><div class=\"entityRiding\"><img class=\"entityRidingImage\" src=\"./images/entity/{0}\" alt=\"{1}\" /><div class=\"entityRidingName\">{1}</div></div></li>".format(queryResult[j].image, queryResult[j].name);
+				html += "<li OnClick=\"entity.add('{1}');entityEditor.extraEditor.close();entityEditor.load(-1)\"><div class=\"entityRiding\"><img class=\"entityRidingImage\" src=\"./images/entity/{0}\" alt=\"{1}\" /><div class=\"entityRidingName\">{1}</div></div></li>".format(queryResult[j].image, queryResult[j].display.name);
 			}
 			html += "</ul>";
 
@@ -69,9 +69,9 @@ var entityEditor = {
 		load: function(ent) {
 			entityEditor.currentEntity = ent;
 			if (ent.name == ent.entityData.name) {
-				$("#entityName").html(ent.name);
+				$("#entityName").html(ent.entityData.display.name);
 			} else {
-				$("#entityName").html("{0} ({1})".format(ent.name, ent.entityData.name));
+				$("#entityName").html("{0} ({1})".format(ent.name, ent.entityData.display.name));
 			}
 
 

@@ -135,7 +135,7 @@ entityData = [{
 		display: {
 			name: 'zombie'
 		},
-		image: 'Zombie.png',
+		image: 'zombie.png',
 		info: 'Zombies are undead hostile mobs.',
 		class: 'Mob',
 		heart: 20,
